@@ -1,4 +1,4 @@
-const pkg = require('../../package.json');
+import pkg from "../../package.json";
 
 require('dotenv').config();
 
@@ -7,7 +7,7 @@ const CONFIG = {
     NAME: pkg.name,
     VERSION: pkg.version,
     DESCRIPTION: pkg.description,
-    AUTHORS: pkg.authors,
+    AUTHORS: pkg.author,
     //HOST: process.env.APP_HOST,
     //BASE_URL: process.env.API_BASE_URL,
     PORT: process.env.PORT || 5000,

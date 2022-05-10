@@ -15,6 +15,6 @@ export const getAppInfo = (req: Request, res: Response) => {
 };
 
 export const getMainPage = (req: Request, res: Response) => {
-  //
-  res.json({ title: 'Index' });
+  res.header('Content-Type', 'text/html');
+  res.render('index', {title: 'node-express-ts-hbs_template'});
 };
