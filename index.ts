@@ -26,7 +26,7 @@ app.use(
 );
 
 app.use(morgan('dev')); //  logging
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.json()); //  expects request data to be sent in JSON format, which often resembles a simple JS object
 app.use(express.urlencoded({ extended: true })); //  expects request data to be sent encoded in the URL, usually in strings or arrays
 app.use(headersOptions);
